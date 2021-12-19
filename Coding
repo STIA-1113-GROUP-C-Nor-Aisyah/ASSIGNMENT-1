@@ -107,6 +107,31 @@ public class BusinessLoan {
 }
 
 2. Personal Account
+		System.out.println(___PLEASE INSERT THE INFORMATION DETAILS___");
+		System.out.println("");
+		System.out.println("Recipient Bank Name: ");
+		String bankname1 = sc.next();
+		sc.nextLine();
+		System.out.println("Recipient Account : ");
+		String accl = sc.next();
+		System.out.println("Recipient Name : ");
+		String name1 = sc.next();
+		sc.nextLine();
+		System.out.println("Recipient Reference : ");
+		String reference1 = sc.next();
+		sc.nextLine();
+		System.out.print("Amount : RM");
+		double amount1 = sc.nextDouble() ;
+
+
+		System.out.println("");
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		System.out.println("^  *Fee : 2%                                                           ^");
+		System.out.println("^  *Please take note that RM1.00 will be charged for every transaction ^");
+		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"); 
+		System.out.println("");
+	}
+}
 
 3. Credit Card
 package assigmentGroup;
