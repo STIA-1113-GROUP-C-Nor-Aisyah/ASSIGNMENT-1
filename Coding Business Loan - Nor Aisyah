@@ -69,7 +69,7 @@ public class BusinessLoan {
 		
 		System.out.println("Do you want to continue?: ");
 		char conti = sc.next().charAt(0);
-		System.out.println("Which one do you preferred");
+		System.out.println("Which one do you preferred");  //choose application method
 		String preferred = sc.next();
 		System.out.println("");
 		System.out.println("Enter the amount of loan: ");
@@ -77,9 +77,9 @@ public class BusinessLoan {
 		System.out.println("Enter the loan duration: ");
 		int duration = sc.nextInt();
 		
-		double interest = 0.045;
+		double interest = 0.045;  //interest = 4.5%
 		System.out.println("");
-		double monthlyPayment = amount * (interest / 12) / ( 1 - 1 / Math.pow(1 + (interest / 12), duration * 12));
+		double monthlyPayment = amount * (interest / 12) / ( 1 - 1 / Math.pow(1 + (interest / 12), duration * 12));  //monthly payment formula
 		double totalPayment = monthlyPayment * 12 * duration;
 		
 		System.out.println("------------------------------------");
