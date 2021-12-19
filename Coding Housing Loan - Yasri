@@ -1,0 +1,52 @@
+package ASSIGNMENT1;
+import java.util.Scanner;
+public class houseLoan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("===== MAYBANK HOUSING LOAN CALCULATOR ======");
+		
+		
+		System.out.println("\nENTER YOUR FULL NAME : ");
+		String name = sc.nextLine();
+		
+		
+		System.out.println("\nENTER THE LOAN AMOUNT : ");
+		
+		double loan =sc.nextDouble();
+		
+		
+		System.out.println("\nENTER THE INTERST RATE : ");
+		
+		double interest = sc.nextDouble();
+		
+		double monthlyinterest = interest /(12*100);
+		
+		
+		System.out.println("\nENTER THE NUMBER OF YEARS : ");
+		
+		double time = sc.nextDouble();
+		
+		double years = time * 12;
+		
+		
+		double monthlypayment= (loan*monthlyinterest*Math.pow(1+monthlyinterest,years))/(Math.pow(1+monthlyinterest,years)-1);
+		
+		double totalpayment = monthlypayment * years;
+		
+		
+		System.out.println("\n*-*-*-*YOUR TOTAL MONTHLY PAYMENT AND TOTAL PAYMENT*-*-*-*");
+		
+		System.out.println("\nTHE TOTAL MONTHLY PAYMENT IS RM "+ (Math.round(monthlypayment)));
+        
+        System.out.println("\nTHE TOTAL PAYMENT IS RM " + (Math.round(totalpayment)));
+        
+        System.out.println("\nTHANK YOU FOR USING MAYBANK CALCULATOR " + name );
+		
+		
+        sc.close();
+	}
+	  
+}
